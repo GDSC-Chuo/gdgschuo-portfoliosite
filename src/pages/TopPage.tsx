@@ -8,7 +8,7 @@ const TopPage = () => {
     <Header />
     <div className="top-page">
       <img src={gdgslogo} alt="TopPageImage" />
-      <h1>トップページ</h1>
+      <h1>トップページです</h1>
     </div>
     <Footer />
   </>
