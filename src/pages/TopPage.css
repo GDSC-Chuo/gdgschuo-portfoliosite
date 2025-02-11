@@ -1,0 +1,20 @@
+.top-page {
+  /* ヘッダーの高さ(80px) + 間隔(84px) */
+  padding-top: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.top-page img {
+  max-width: 100%;
+  height: 90px;
+  margin-bottom: 2rem;
+}
+
+.top-page h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 1rem;
+}
