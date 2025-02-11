@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding-top: 64px; /* ヘッダーの高さ分のパディング */
+  padding-top: 48px; /* ヘッダーの高さ分のパディング */
   padding-bottom: 64px; /* フッターの高さ分のパディング */
 }
 

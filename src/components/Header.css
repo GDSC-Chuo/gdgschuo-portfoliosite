@@ -6,6 +6,7 @@
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  height: 80px;
 }
 
 .header-container {
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .logo a {
@@ -22,6 +24,11 @@
   color: #333;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-menu ul {
