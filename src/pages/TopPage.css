@@ -1,10 +1,11 @@
 .top-page {
   /* ヘッダーの高さ(80px) + 間隔(84px) */
-  padding-top: 164px;
-  display: flex;
+  padding-top: 52px;
+  
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  
 }
 
 .top-page img {
@@ -17,4 +18,99 @@
   font-size: 2rem;
   color: #333;
   margin-top: 1rem;
+}
+
+.div-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  width: 100%;
+  gap: 2rem;
+}
+
+.div-1-img {
+  display: flex;
+  align-items: center;
+}
+.div-1-img img{
+  height: 280px;
+  width:auto;
+}
+
+.div-1-text {
+  display: flex;
+  align-items: center;
+}
+
+.div-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.div-2-img {
+  display: flex;
+  align-items: center;
+}
+
+.div-2-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.div-2-text h2 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.div-2-img img {
+  height: 610px;
+  width: auto;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .div-1 {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .div-1-img img {
+    height: 86px;
+    width: auto;
+  }
+
+  .div-2 {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .div-2-img img {
+    height: 120px;
+    width: auto;
+  }
+
+  .div-1-text h1,
+  .div-2-text h2 {
+    font-size: 1rem;
+  }
+
+  .div-2-text {
+    gap: 0.5rem;
+  }
+
+  .div-2-text h2 {
+    font-size: 8px;
+  }
 }

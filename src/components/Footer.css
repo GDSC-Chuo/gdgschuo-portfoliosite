@@ -18,7 +18,24 @@
 }
 
 .footer .logo img {
-  height: 30px;
+  height: 30px; /* PCでの表示サイズ */
+  width: auto;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .footer .logo img {
+    height: 6px; /* PCサイズの1/5 (30px ÷ 5 = 6px) */
+    width: auto; /* 横幅は自動調整で比率を保持 */
+  }
+
+  .footer-menu a {
+    font-size: 8px;
+  }
+  
+  .footer-menu ul {
+    gap: 1rem;
+  }
 }
 
 .footer-menu ul {
@@ -38,4 +55,38 @@
 
 .footer-menu a:hover {
   color: #007bff;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; /* 要素間の間隔 */
+}
+
+.instagram img,
+.X img {
+  height: 24px;
+  width: auto;
+}
+
+.follow-me {
+  font-size: 16px;
+  color: #333;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .social-media {
+    gap: 0.5rem; /* スマホでの間隔を狭める */
+  }
+
+  .instagram img,
+  .X img {
+    height: 12px; /* スマホでの画像サイズ */
+  }
+
+  .follow-me {
+    font-size: 8px; /* スマホでの文字サイズ */
+  }
 }

@@ -27,7 +27,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 50px; /* PCでの表示サイズ */
   width: auto;
 }
 
@@ -44,6 +44,23 @@
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .nav-menu a {
+    font-size: 8px;
+  }
+  
+  .nav-menu ul {
+    gap: 1rem;
+  }
+
+  .logo img {
+    height: 10px; /* PCサイズの1/5 (50px ÷ 5 ≈ 10px) */
+    width: auto; /* 横幅は自動調整で比率を保持 */
+  }
 }
 
 .nav-menu a:hover {
