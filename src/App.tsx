@@ -3,6 +3,8 @@ import TopPage from './pages/TopPage';
 import AboutUs from './pages/AboutUs';
 import Activities from './pages/Activities';
 import Portfolio from './pages/Portfolio';
+import Study from './pages/Study';
+import Production from './pages/Production';
 
 import './App.css';
 
@@ -15,6 +17,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/study" element={<Study />} />
+          <Route path="/production" element={<Production />} />
         </Routes>
       </div>
     </Router>
