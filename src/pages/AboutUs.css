@@ -32,7 +32,7 @@ h1{
   .about-us-content:nth-child(odd) {
     flex-direction: row-reverse;
   }
-  
+
 h2 {
     font-size: 24px;
     font-weight: bold;
