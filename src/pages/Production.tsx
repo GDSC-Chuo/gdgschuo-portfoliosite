@@ -5,8 +5,10 @@ const Production = () => {
   return (
   <>
     <Header />
-    <div className="production">
-      <h1>ポートフォリオ（制作物）</h1>
+    <div className="portfolio">
+      <div className="portfolio-hedder">
+        <h1>Portfolio（制作物）</h1>
+      </div>
     </div>
     <Footer />
   </>
