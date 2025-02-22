@@ -29,6 +29,9 @@ const TopPage = () => {
           <h2>日々活動をしています</h2>
         </div>
       </div>
+      <div className='info-section'>
+        <h2>Information</h2>
+      </div>
       
         
       
