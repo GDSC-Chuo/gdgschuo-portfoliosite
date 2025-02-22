@@ -15,8 +15,8 @@ const Header: React.FC = () => {
           <ul>
             <li><Link to="/">Top</Link></li>
             <li><Link to="/about">About us</Link></li>
-            <li><Link to="/activities">活動紹介</Link></li>
-            <li><Link to="/portfolio">ポートフォリオ</Link></li>
+            <li><Link to="/production">制作物</Link></li>
+            <li><Link to="/study">勉強会</Link></li>
           </ul>
         </nav>
       </div>
