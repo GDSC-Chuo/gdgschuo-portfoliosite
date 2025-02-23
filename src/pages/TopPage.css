@@ -52,7 +52,6 @@
   background-color: #f2f2f2;
   width: 100%;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .div-2-img {
@@ -112,5 +111,88 @@
 
   .div-2-text h2 {
     font-size: 8px;
+  }
+}
+
+.info-section {
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.info-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.info-table {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+  padding: 1rem;
+  border-top: 1px solid black;
+}
+
+.info-table th {
+  text-align: center;
+  width: 30%;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-table td {
+  width: 70%;
+}
+
+.info-table td img {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 8px; /* アイコンの左右に余白を追加 */
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .info-section h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-table {
+    width: 95%;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 0.5rem;
+    font-size: 8px;
+  }
+
+  .info-table td img {
+    height: 12px; /* スマホでは小さく */
+    margin: 0 4px; /* スマホでは余白も小さく */
+  }
+}
+
+.sns-account {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sns-account:first-child {
+  margin-right: 48px; /* PC版での余白 */
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .sns-account:first-child {
+    margin-right: 24px; /* スマホ版での余白 */
   }
 }
