@@ -1,0 +1,158 @@
+body{
+    margin:0px;
+}
+
+.semititle {
+    height: 80px;
+    margin:25px 0px 40px 0px;
+    background-color: #D9D9D9;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.honbun {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+.about-us-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    background-color: #F7F7F7;
+  }
+
+/*カラーブロック*/
+
+.color-block1 {
+    background-color: #4385F3; 
+    color: white;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+  }
+
+.color-block2{
+    background-color: #E94436;
+    color: white;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    margin-left: 7px;
+    margin-bottom: 30px;
+  }
+  
+
+.color-block3{
+    background-color: #109D58;
+    color: white;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+  } 
+
+.color-block4{
+    background-color:#FABC05;
+    color: white;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    margin-left: 7px;
+    margin-bottom: 30px;
+  }
+
+/*カラーブロック終わり*/
+
+/*以下カラーブロック内css*/
+
+.block-title h2 {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+.block-title p {
+    font-size: 12px;
+    margin-top: -5px; 
+    margin-left: -50px;
+  }
+
+.list {
+    text-align: left;
+    margin-left: 30px;
+    border-left: 1px solid white; 
+    padding-left: 10px;
+  }
+
+.list p{
+    font-size: 8px;
+    margin: 0px;
+  }
+  
+.description {
+    width: 130px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 30px;
+  }
+  
+.link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 8px;
+    text-decoration: none;
+    color: white;
+  }
+  
+.description{
+    font-size: 8px;
+  }
+
+/*カラーブロック終わり*/
+
+/*画像css*/
+  
+.about-us-content:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+.about-us-content img {
+    margin-right: 10px;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+.img{
+    display: flex;
+    flex-direction: column;
+  }
+
+img:first-child{
+    margin:0 auto;
+  }
+
+img:nth-child(2){
+    margin-top: 10px;
+    margin-left:4em;
+  }
+
+/*画像終わり*/
