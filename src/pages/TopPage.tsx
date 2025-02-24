@@ -1,10 +1,16 @@
 import './TopPage.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Box from '@mui/material/Box';
+import  Grid  from "@mui/material/Grid2";
 import gdgslogo from '../images/TopPage/gdgslogo.svg';
 import div2img from '../images/TopPage/div2img.svg';
 import instagramlogo from '../images/Footer/instagram_logo.svg';
 import Xlogo from '../images/Footer/X_logo.svg';
+import Create from '../images/TopPage/aboutus_create.svg';
+import Study from '../images/TopPage/aboutus_study.svg';
+import Connect from '../images/TopPage/aboutus_connect.svg';
+import Express from '../images/TopPage/aboutus_express.svg';
 const TopPage = () => {
   return (
   <>
@@ -30,6 +36,46 @@ const TopPage = () => {
           <h2>テクノロジーに興味のある人が集まり</h2>
           <h2>日々活動をしています</h2>
         </div>
+      </div>
+      <div className='aboutus-section'>
+        <h2>About Us</h2>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid size={{xs:6, md:3}}>
+              <div className="aboutus-create">
+                <h1>Create</h1>
+                <h2>開発</h2>
+                <img src={Create} alt="Create" />
+                <p>設計から実装まで<br />チームを組んで行っています<br />1人では難しいことも<br />チームでなら最後まで取り組める！</p>
+
+              </div>
+            </Grid>
+            <Grid size={{xs:6, md:3}}>
+              <div className="aboutus-study">
+                <h1>Study</h1>
+                <h2>勉強会</h2>
+                <img src={Study} alt="Study" />
+                <p>興味のあることや<br/> 必要性に基づいて<br/> 勉強会を開催しています</p>
+              </div>
+            </Grid>
+            <Grid size={{xs:6, md:3}}>
+              <div className="aboutus-connect">
+                <h1>Connect</h1>
+                <h2>イベント</h2>
+                <img src={Connect} alt="Connect" />
+                <p>学年や学部問わず親睦を深めたり、<br/> GDGsの活動の理解を深める<br/> イベントを開催します</p>
+              </div>
+            </Grid>
+            <Grid size={{xs:6, md:3}}>
+              <div className="aboutus-express">
+                <h1>Express</h1>
+                <h2>SNS運用</h2>
+                <img src={Express} alt="Express" />
+                <p>活動の様子や<br/> 勉強会・イベントの告知はSNSにて！<br/> フォローお待ちしています！</p>
+              </div>
+            </Grid>
+          </Grid>
+        </Box>
       </div>
       <div className='info-section'>
         <h2>Information</h2>

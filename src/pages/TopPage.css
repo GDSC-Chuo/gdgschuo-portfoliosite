@@ -196,3 +196,122 @@
     margin-right: 24px; /* スマホ版での余白 */
   }
 }
+
+.aboutus-create,
+.aboutus-study,
+.aboutus-connect,
+.aboutus-express {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  height: 500px; /* 縦幅を統一 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.aboutus-create {
+  background-color: #4285F4; /* Google Blue */
+}
+
+.aboutus-study {
+  background-color: #DB4437; /* Google Red */
+}
+
+.aboutus-connect {
+  background-color: #0F9D58; /* Google Green */
+}
+
+.aboutus-express {
+  background-color: #F4B400; /* Google Yellow */
+}
+
+/* 共通のテキストスタイル */
+.aboutus-create h1,
+.aboutus-study h1,
+.aboutus-connect h1,
+.aboutus-express h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center; /* 中央揃えを追加 */
+  width: 100%; /* 幅を100%に設定 */
+}
+
+.aboutus-create h2,
+.aboutus-study h2,
+.aboutus-connect h2,
+.aboutus-express h2 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center; /* h2も中央揃えに */
+  width: 100%; /* 幅を100%に設定 */
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .aboutus-create h1,
+  .aboutus-study h1,
+  .aboutus-connect h1,
+  .aboutus-express h1 {
+    font-size: 1rem;
+  }
+
+  .aboutus-create h2,
+  .aboutus-study h2,
+  .aboutus-connect h2,
+  .aboutus-express h2 {
+    font-size: 0.8rem;
+  }
+
+  .aboutus-create,
+  .aboutus-study,
+  .aboutus-connect,
+  .aboutus-express {
+    height: 440px; /* スマホでの縦幅 */
+  }
+}
+
+/* About Usセクションの画像サイズ指定 */
+.aboutus-create img,
+.aboutus-study img,
+.aboutus-connect img,
+.aboutus-express img {
+  height: 200px; /* PC版での高さ */
+  width: auto;
+  margin-top: 1rem;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .aboutus-create img,
+  .aboutus-study img,
+  .aboutus-connect img,
+  .aboutus-express img {
+    height: 100px; /* スマホ版での高さ */
+    width: auto;
+  }
+}
+
+/* About Usセクションの段落スタイル */
+.aboutus-create p,
+.aboutus-study p,
+.aboutus-connect p,
+.aboutus-express p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .aboutus-create p,
+  .aboutus-study p,
+  .aboutus-connect p,
+  .aboutus-express p {
+    font-size: 0.8rem;
+  }
+}
+
