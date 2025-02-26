@@ -107,10 +107,12 @@ h1{
   
 .description {
     width: 130px;
+    text-align: left;
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.5;
     margin-left: 30px;
+    margin-top: 20px;
   }
   
 .link {
