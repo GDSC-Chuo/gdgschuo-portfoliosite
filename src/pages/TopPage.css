@@ -5,7 +5,8 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  
+  overflow-x: hidden; /* 横スクロール防止 */
+  width: 100%;
 }
 
 .top-page img {
@@ -78,21 +79,27 @@
 
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 768px) {
-  .div-1 {
-    flex-direction: row;
+  .div-1, .div-2 {
+    flex-direction: row; /* 横方向に変更 */
     gap: 0.5rem;
     padding: 0.5rem;
+    width: 100%;
+  }
+
+  .div-1-img, .div-2-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-1-text, .div-2-text {
+    width: 100%;
+    text-align: center;
   }
 
   .div-1-img img {
     height: 86px;
     width: auto;
-  }
-
-  .div-2 {
-    flex-direction: row;
-    gap: 0.5rem;
-    padding: 0.5rem;
   }
 
   .div-2-img img {
@@ -111,6 +118,24 @@
 
   .div-2-text h2 {
     font-size: 8px;
+  }
+
+  /* テーブルのレスポンシブ対応 */
+  .info-table {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  /* About Usセクションのレスポンシブ対応 */
+  .aboutus-section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* Gridコンテナの調整 */
+  .MuiGrid-root {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -163,10 +188,6 @@
   .info-section h2 {
     font-size: 1rem;
     margin-bottom: 1rem;
-  }
-
-  .info-table {
-    width: 95%;
   }
 
   .info-table th,
