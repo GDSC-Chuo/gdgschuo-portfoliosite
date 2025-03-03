@@ -78,7 +78,7 @@
 }
 
 .production-section {
-  width: min(700px, 90%);
+  width: min(1400px, 90%);
   margin-inline: auto;
   display: grid;
   grid-auto-rows: auto;
@@ -103,7 +103,33 @@
   background-color: #f7f7f7;
   display: grid;
   place-content: center;
+  flex-basis: 33%;
 }
+
+.sliderItem img {
+  width: 360px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .production-section {
+    width: min(700px, 90%);
+  }
+
+  .sliderItem {
+    flex-basis: 100%;
+  }
+  
+}
+
+
+
+
+
+
 
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 768px) {

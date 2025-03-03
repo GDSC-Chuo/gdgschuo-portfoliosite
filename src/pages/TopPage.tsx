@@ -12,6 +12,14 @@ import Create from '../images/TopPage/aboutus_create.svg';
 import Study from '../images/TopPage/aboutus_study.svg';
 import Connect from '../images/TopPage/aboutus_connect.svg';
 import Express from '../images/TopPage/aboutus_express.svg';
+import Portfolio1 from '../images/TopPage/portfolio-slider/image214.png';
+import Portfolio2 from '../images/TopPage/portfolio-slider/image213.png';
+import Portfolio3 from '../images/TopPage/portfolio-slider/image(3).png';
+import Portfolio4 from '../images/TopPage/portfolio-slider/image(4).png';
+import Portfolio5 from '../images/TopPage/portfolio-slider/websitestudy.png';
+
+
+
 const TopPage = () => {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
@@ -101,9 +109,12 @@ const TopPage = () => {
           <h2>Slider</h2>
             <div className='slider' ref={emblaRef}>
               <div className='sliderList'>
-                <div className='sliderItem'>Slide 1</div>
-                <div className='sliderItem'>Slide 2</div>
-                <div className='sliderItem'>Slide 3</div>
+                <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>Slide 1</div>
+                <div className='sliderItem'><img src = {Portfolio2} alt='Portfolio1'></img>Slide 2</div>
+                <div className='sliderItem'><img src = {Portfolio3} alt='Portfolio1'></img>Slide 3</div>
+                <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>Slide 4</div>
+                <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Slide 5</div>
+                <div className='sliderItem'>Slide 6</div>
               </div>
             </div>
 
