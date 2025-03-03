@@ -1,6 +1,7 @@
 import './TopPage.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import useEmblaCarousel from 'embla-carousel-react'
 import Box from '@mui/material/Box';
 import  Grid  from "@mui/material/Grid2";
 import gdgslogo from '../images/TopPage/gdgslogo.svg';
@@ -12,6 +13,24 @@ import Study from '../images/TopPage/aboutus_study.svg';
 import Connect from '../images/TopPage/aboutus_connect.svg';
 import Express from '../images/TopPage/aboutus_express.svg';
 const TopPage = () => {
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+  const handleNext = () => {
+    if (!emblaApi || !emblaApi.canScrollNext()) return;
+
+    console.log('next');
+    emblaApi.scrollNext();
+  }
+
+  const handlePrev = () => {
+    if (!emblaApi || !emblaApi.canScrollPrev()) return;
+
+    console.log('next');
+    emblaApi.scrollPrev();
+  }
+
+
   return (
   <>
     <Header />
@@ -79,6 +98,19 @@ const TopPage = () => {
       </div>
       <div className='production-section'>
         <h2>Portfolio（制作物）</h2>
+          <h2>Slider</h2>
+            <div className='slider' ref={emblaRef}>
+              <div className='sliderList'>
+                <div className='sliderItem'>Slide 1</div>
+                <div className='sliderItem'>Slide 2</div>
+                <div className='sliderItem'>Slide 3</div>
+              </div>
+            </div>
+
+              <div className='sliderControls'>
+                <button type="button" onClick={handlePrev}>Prev</button>
+                <button type="button" onClick={handleNext}>Next</button>
+              </div>
         
       </div>
       <div className='info-section'>

@@ -77,6 +77,34 @@
   width: auto;
 }
 
+.production-section {
+  width: min(700px, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+/* スライドのコンテナ（他のスライドが見えないようにする） */
+.slider {
+  overflow: hidden;
+}
+
+/* スライドの一覧を横並びにする */
+.sliderList {
+  display: flex;
+}
+
+/* 表示枚数は flex-basis で親コンテナのサイズに対して割合指定（例えば2枚表示なら50%） */
+.sliderItem {
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 16/9;
+  background-color: #f7f7f7;
+  display: grid;
+  place-content: center;
+}
+
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 768px) {
   .div-1, .div-2 {
