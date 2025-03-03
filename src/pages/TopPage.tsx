@@ -1,6 +1,7 @@
 import './TopPage.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import useEmblaCarousel from 'embla-carousel-react'
 import Box from '@mui/material/Box';
 import  Grid  from "@mui/material/Grid2";
 import gdgslogo from '../images/TopPage/gdgslogo.svg';
@@ -11,7 +12,33 @@ import Create from '../images/TopPage/aboutus_create.svg';
 import Study from '../images/TopPage/aboutus_study.svg';
 import Connect from '../images/TopPage/aboutus_connect.svg';
 import Express from '../images/TopPage/aboutus_express.svg';
+import Portfolio1 from '../images/TopPage/portfolio-slider/image214.png';
+import Portfolio2 from '../images/TopPage/portfolio-slider/image213.png';
+import Portfolio3 from '../images/TopPage/portfolio-slider/image(3).png';
+import Portfolio4 from '../images/TopPage/portfolio-slider/image(4).png';
+import Portfolio5 from '../images/TopPage/portfolio-slider/websitestudy.png';
+
+
+
 const TopPage = () => {
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+  const handleNext = () => {
+    if (!emblaApi || !emblaApi.canScrollNext()) return;
+
+    console.log('next');
+    emblaApi.scrollNext();
+  }
+
+  const handlePrev = () => {
+    if (!emblaApi || !emblaApi.canScrollPrev()) return;
+
+    console.log('next');
+    emblaApi.scrollPrev();
+  }
+
+
   return (
   <>
     <Header />
@@ -76,6 +103,26 @@ const TopPage = () => {
             </Grid>
           </Grid>
         </Box>
+      </div>
+      <div className='production-section'>
+        <h2>Portfolio（制作物）</h2>
+          <h2>Slider</h2>
+            <div className='slider' ref={emblaRef}>
+              <div className='sliderList'>
+                <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>Slide 1</div>
+                <div className='sliderItem'><img src = {Portfolio2} alt='Portfolio1'></img>Slide 2</div>
+                <div className='sliderItem'><img src = {Portfolio3} alt='Portfolio1'></img>Slide 3</div>
+                <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>Slide 4</div>
+                <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Slide 5</div>
+                <div className='sliderItem'>Slide 6</div>
+              </div>
+            </div>
+
+              <div className='sliderControls'>
+                <button type="button" onClick={handlePrev}>Prev</button>
+                <button type="button" onClick={handleNext}>Next</button>
+              </div>
+        
       </div>
       <div className='info-section'>
         <h2>Information</h2>
