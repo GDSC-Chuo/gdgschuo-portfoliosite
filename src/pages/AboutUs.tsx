@@ -2,7 +2,6 @@ import './AboutUs.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-/*import img from '../images/Aboutus/aboutus_img.png';*/
 import img1 from '../images/Aboutus/aboutUs1.png';
 import img2 from '../images/Aboutus/aboutUs2.png';
 import img3 from '../images/Aboutus/aboutUs3.png';
@@ -116,9 +115,13 @@ const AboutUs = () => {
             フォローお待ちしています！
             </p>
             <div className="sns_block">
+              <a href="https://www.instagram.com/gdgs_chuo?igsh=MWdxNzFhdmRvZDNveg==" target="_blank" rel="noopener noreferrer">
               <img src={insta} alt="insta" className="sns"/>
+              </a>
+              <a href="https://x.com/gdgs_chuo?s=21&t=xSTSR4dUHIM8W0zT6brq9w" target="_blank" rel="noopener noreferrer">
               <img src={twitter} alt="insta" className="sns"/>
-              <img src={sns_logo} alt="insta" className="sns"/>
+              </a>
+              <img src={sns_logo} alt="insta" className="sns_logo"/>
             </div>
           </div>
           <div className="img">
