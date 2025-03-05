@@ -3,16 +3,16 @@ body{
 }
 
 .semititle {
-    height: 80px;
+    height: 100px;
     margin:25px 0px 40px 0px;
     background-color: #D9D9D9;
 }
 
 h1{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
     text-align: left;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-left: 10px;
 }
 
@@ -27,7 +27,7 @@ h1{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 180px;
+    height: 600px;
     background-color: #F7F7F7;
   }
 
@@ -37,9 +37,9 @@ h1{
     background-color: #4385F3; 
     color: white;
     position: relative;
-    width: 190px;
-    height: 200px;
-    margin-right: 7px;
+    width: 600px;
+    height: 600px;
+    margin-right: 90px;
     margin-bottom: 30px;
   }
 
@@ -47,9 +47,9 @@ h1{
     background-color: #E94436;
     color: white;
     position: relative;
-    width: 190px;
-    height: 200px;
-    margin-left: 7px;
+    width: 600px;
+    height: 600px;
+    margin-left: 90px;
     margin-bottom: 30px;
   }
   
@@ -58,9 +58,9 @@ h1{
     background-color: #109D58;
     color: white;
     position: relative;
-    width: 190px;
-    height: 200px;
-    margin-right: 7px;
+    width: 600px;
+    height: 600px;
+    margin-right: 90px;
     margin-bottom: 30px;
   } 
 
@@ -68,93 +68,215 @@ h1{
     background-color:#FABC05;
     color: white;
     position: relative;
-    width: 190px;
-    height: 200px;
-    margin-left: 7px;
+    width: 600px;
+    height: 600px;
+    margin-left: 90px;
     margin-bottom: 30px;
   }
 
 /*カラーブロック終わり*/
 
 /*以下カラーブロック内css*/
-
 .block-title h2 {
-    font-size: 24px;
+    font-size: 70px;
     color: rgba(255, 255, 255, 0.7);
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
     margin-bottom: 0px;
     text-align: left;
   }
 
 .block-title p {
-    font-size: 12px;
+    font-size: 30px;
     margin-top: -5px; 
-    margin-left: -50px;
+    margin-left: -300px;
   }
 
 .list {
     text-align: left;
-    margin-left: 30px;
-    border-left: 1px solid white; 
+    margin-left: 50px;
+    border-left: 3px solid white; 
     padding-left: 10px;
   }
 
 .list p{
-    font-size: 8px;
+    font-size: 30px;
     margin: 0px;
   }
   
 .description {
-    width: 130px;
+    width: 400px;
     text-align: left;
-    flex-wrap: wrap;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-left: 30px;
+    line-break: anywhere;
+    font-size: 20px;
+    margin-left: 50px;
     margin-top: 20px;
   }
   
 .link {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 8px;
+    bottom: 50px;
+    right: 50px;
+    font-size: 20px;
     text-decoration: none;
-    color: white;
-  }
-  
-.description{
-    font-size: 8px;
   }
 
-/*カラーブロック終わり*/
+.link a{
+  text-decoration: none;
+  color: white;
+}
 
-/*画像css*/
-  
 .about-us-content:nth-child(odd) {
     flex-direction: row-reverse;
   }
-  
-.about-us-content img {
-    margin-right: 10px;
-    width: 120px;
-    height: auto;
-    border-radius: 10px;
-  }
+
+.sns_block{
+  text-align: right;
+  margin-right: 30px;
+}
+
+.sns{
+  width:70px;
+}
+/*カラーブロック終わり*/
+
+/*画像css*/
 
 .img{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+  
+.img1 {
+    margin-left: 90px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
   }
 
-img:first-child{
-    margin:0 auto;
+.img2 {
+    margin-left: 290px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
   }
 
-img:nth-child(2){
-    margin-top: 10px;
-    margin-left:4em;
+  .img3 {
+    margin-right: 290px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .img4 {
+    margin-left: 200px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
   }
 
 /*画像終わり*/
+
+@media screen and (max-width: 768px){
+
+.about-us-content {
+    width: 100%;
+    height: 180px;
+  }
+
+.color-block1,.color-block3 {
+  width: 190px;
+  height: 200px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+}
+
+.color-block2, .color-block4{
+  width: 190px;
+  height: 200px;
+  margin-left: 7px;
+  margin-bottom: 30px;
+}
+
+.block-title h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.block-title p {
+  font-size: 12px;
+  margin-top: -5px; 
+  margin-left: -50px;
+}
+
+.list {
+  text-align: left;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 1px solid white; 
+}
+
+.list p{
+  font-size: 8px;
+  margin: 0px;
+}
+
+.description {
+  width: 130px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.link {
+  bottom: 10px;
+  right: 10px;
+  font-size: 8px;
+}
+
+.description{
+  font-size: 8px;
+}
+
+.img1 {
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+}
+
+.img2 {
+  margin-right: 10px;
+  margin-left: 60px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.img3 {
+  margin-right: 50px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+}
+
+.img4 {
+  margin-left: 30px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+}
