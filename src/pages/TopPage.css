@@ -85,6 +85,14 @@
   gap: 20px;
 }
 
+.event-study-section {
+  width: min(1400px, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
 /* スライドのコンテナ（他のスライドが見えないようにする） */
 .slider {
   overflow: hidden;
