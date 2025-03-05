@@ -10,9 +10,9 @@ import img5 from '../images/Aboutus/aboutUs5.png';
 import img6 from '../images/Aboutus/aboutUs6.png';
 import img7 from '../images/Aboutus/aboutUs7.png';
 import img8 from '../images/Aboutus/aboutUs8.png';
-import insta from'../images/aboutus/insta.png';
-import twitter from'../images/aboutus/twitter.png';
-import sns_logo from'../images/aboutus/snslogo.png';
+import insta from'../images/Aboutus/insta.png';
+import twitter from'../images/Aboutus/twitter.png';
+import sns_logo from'../images/Aboutus/snslogo.png';
 
 
 const AboutUs = () => {
