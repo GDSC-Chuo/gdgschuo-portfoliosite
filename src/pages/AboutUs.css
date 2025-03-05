@@ -77,7 +77,6 @@ h1{
 /*カラーブロック終わり*/
 
 /*以下カラーブロック内css*/
-
 .block-title h2 {
     font-size: 70px;
     color: rgba(255, 255, 255, 0.7);
@@ -96,7 +95,7 @@ h1{
 .list {
     text-align: left;
     margin-left: 50px;
-    border-left: 1px solid white; 
+    border-left: 3px solid white; 
     padding-left: 10px;
   }
 
@@ -120,12 +119,25 @@ h1{
     right: 50px;
     font-size: 20px;
     text-decoration: none;
-    color: white;
   }
 
-  .about-us-content:nth-child(odd) {
+.link a{
+  text-decoration: none;
+  color: white;
+}
+
+.about-us-content:nth-child(odd) {
     flex-direction: row-reverse;
   }
+
+.sns_block{
+  text-align: right;
+  margin-right: 30px;
+}
+
+.sns{
+  width:70px;
+}
 /*カラーブロック終わり*/
 
 /*画像css*/
@@ -152,7 +164,7 @@ h1{
     margin-top: 20px;
   }
 
-.img3 {
+  .img3 {
     margin-right: 290px;
     border-radius: 10px;
     width: 400px;
@@ -160,7 +172,8 @@ h1{
     object-fit: cover;
   }
 
-.img4 {
+  .img4 {
+    margin-left: 200px;
     border-radius: 10px;
     width: 400px;
     height: 250px;
@@ -169,3 +182,101 @@ h1{
   }
 
 /*画像終わり*/
+
+@media screen and (max-width: 768px){
+
+.about-us-content {
+    width: 100%;
+    height: 180px;
+  }
+
+.color-block1,.color-block3 {
+  width: 190px;
+  height: 200px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+}
+
+.color-block2, .color-block4{
+  width: 190px;
+  height: 200px;
+  margin-left: 7px;
+  margin-bottom: 30px;
+}
+
+.block-title h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.block-title p {
+  font-size: 12px;
+  margin-top: -5px; 
+  margin-left: -50px;
+}
+
+.list {
+  text-align: left;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 1px solid white; 
+}
+
+.list p{
+  font-size: 8px;
+  margin: 0px;
+}
+
+.description {
+  width: 130px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.link {
+  bottom: 10px;
+  right: 10px;
+  font-size: 8px;
+}
+
+.description{
+  font-size: 8px;
+}
+
+.img1 {
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+}
+
+.img2 {
+  margin-right: 10px;
+  margin-left: 60px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.img3 {
+  margin-right: 50px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+}
+
+.img4 {
+  margin-left: 30px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+}

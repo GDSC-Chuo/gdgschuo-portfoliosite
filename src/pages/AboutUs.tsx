@@ -1,6 +1,7 @@
 import './AboutUs.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 /*import img from '../images/Aboutus/aboutus_img.png';*/
 import img1 from '../images/Aboutus/aboutUs1.png';
 import img2 from '../images/Aboutus/aboutUs2.png';
@@ -10,6 +11,9 @@ import img5 from '../images/Aboutus/aboutUs5.png';
 import img6 from '../images/Aboutus/aboutUs6.png';
 import img7 from '../images/Aboutus/aboutUs7.png';
 import img8 from '../images/Aboutus/aboutUs8.png';
+import insta from'../images/aboutus/insta.png';
+import twitter from'../images/aboutus/twitter.png';
+import sns_logo from'../images/aboutus/snslogo.png';
 
 
 const AboutUs = () => {
@@ -40,7 +44,7 @@ const AboutUs = () => {
           1人では難しいことも
           チームでなら最後まで取り組める！
           </p>
-          <a href="#" className="link">作品一覧 &gt;</a>
+          <a href="#" className="link"><Link to="/production">作品一覧 &gt;</Link></a>
         </div>
           <div className="img">
             <img src={img1} alt="img" className="img1"/>
@@ -64,7 +68,7 @@ const AboutUs = () => {
             必要性に基づいて
             勉強会を開催しています
             </p>
-            <a href="#" className="link">勉強会一覧 &gt;</a>
+            <a href="#" className="link"><Link to="/study">勉強会一覧 &gt;</Link></a>
           </div>
           <div className="img">
             <img src={img3} alt="img" className="img3"/>
@@ -111,13 +115,18 @@ const AboutUs = () => {
             勉強会・イベントの告知はSNSにて！
             フォローお待ちしています！
             </p>
+            <div className="sns_block">
+              <img src={insta} alt="insta" className="sns"/>
+              <img src={twitter} alt="insta" className="sns"/>
+              <img src={sns_logo} alt="insta" className="sns"/>
+            </div>
           </div>
           <div className="img">
             <img src={img7} alt="img" className="img3"/>
             <img src={img8} alt="img" className="img4"/>
           </div>
         </div>
-       
+      
       </div>
       
     </div>
