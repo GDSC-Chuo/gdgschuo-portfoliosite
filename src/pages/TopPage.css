@@ -398,3 +398,19 @@
   }
 }
 
+/* ダイアログ内の画像スタイル */
+.MuiDialog-paper .MuiCardMedia-root {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 768px) {
+  .MuiDialog-paper .MuiCardMedia-root {
+    width: 300px;
+    height: auto;
+    margin: 0 auto; /* 中央揃え */
+  }
+}
+
