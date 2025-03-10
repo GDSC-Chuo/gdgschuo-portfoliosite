@@ -21,4 +21,9 @@
     height: auto;
     margin: 0 auto; /* 中央揃え */
   }
+
+  /* ダイアログタイトルのフォントサイズ */
+  .MuiDialog-paper .MuiDialogTitle-root .MuiTypography-h5 {
+    font-size: 16px;
+  }
 }
