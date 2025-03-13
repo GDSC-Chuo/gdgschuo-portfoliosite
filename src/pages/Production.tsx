@@ -22,7 +22,6 @@ interface DialogContent {
 interface Project {
   id: number;
   title: string[];
-  yymd: string;
   dialogContent: DialogContent;  
 }
 
@@ -33,7 +32,6 @@ const Production = () => {
     {
       id: 1,
       title: ["iTLサークル紹介"],
-      yymd: "2024年5月12日",
       dialogContent: {
         title: ["iTLサークル紹介"],
         content: (
@@ -42,16 +40,12 @@ const Production = () => {
               component="img"
               height="300"
               image={portfolioImage1}
-              alt="プロジェクト1"
+              alt="iTLサークル紹介サイト"
               sx={{ borderRadius: 1 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
+            学部独自のサークルが多いiTL。「iTLにはどんなサークルがある？」「公認なのか非公認なのかも分からない...。」新入生によくあるこれらの悩みを、解決するためのサイトを作成しました。GDGsと国際連盟がタッグを組み、iTLのサークルを一覧にまとめてあります。iTLならではの魅力的なサークルがたくさんあるので、新入生はぜひご覧ください！
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -71,7 +65,7 @@ const Production = () => {
     {
       id: 2,
       title: ["iTL Free Classroom"],
-      yymd: "2024年8月3日～4日",
+     
       dialogContent: {
         title: ["iTL Free Classroom"],
         content: (
@@ -80,25 +74,21 @@ const Production = () => {
               component="img"
               height="300"
               image={portfolioImage2}
-              alt="プロジェクト2"
+              alt="iTL Free Classroom"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
-            </Typography>
+            このアプリケーションは、Vue.jsとFirebaseを使用して開発した大学内の空き教室可視化ツールです。学生や教職員が、空いている教室や授業が行われている教室を簡単に確認できるように設計されています。
+            </Typography>            
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
               <ul style={{ 
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>Figma</li>
-                <li>React</li>
+                <li>フロントエンド：Vue.js</li>
+                <li>バックエンド：Firebase</li>
               </ul>
             </Typography>
           </Box>
@@ -108,7 +98,6 @@ const Production = () => {
     {
       id: 3,
       title: ["JEARNサイト"],
-      yymd: "2023年10月14日",
       dialogContent: {
         title: ["JEARNサイト"],
         content: (
@@ -117,12 +106,14 @@ const Production = () => {
               component="img"
               height="300"
               image={portfolioImage3}
-              alt="プロジェクト3"
+              alt="JEARNサイト"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
+            非営利団体JEARNのHP改修プロジェクトです。
+            このプロジェクトのゴールはHPを完成させて、誰でもドキュメントを見れば改修・更新ができる状態にすることです。
+
             </Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">
@@ -134,8 +125,10 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>Figma</li>
-                <li>React</li>
+                <li>BootStrap</li>
               </ul>
             </Typography>            
           </Box>
@@ -145,7 +138,6 @@ const Production = () => {
     {
       id: 4,
       title: ["中央大学専用単位計算アプリ"],
-      yymd: "2023年10月14日",
       dialogContent: {
         title: ["中央大学専用単位計算アプリ"],
         content: (
@@ -154,16 +146,12 @@ const Production = () => {
               component="img"
               height="300"
               image={portfolioImage4}
-              alt="プロジェクト3"
+              alt="中央大学専用単位計算アプリ"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
+            「manabaやCplusが使いづらく、自身の単位確認ができない」「確認できても不安」そういった学生のためのアプリケーション。
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -171,8 +159,10 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>Figma</li>
-                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Django</li>
               </ul>
             </Typography>           
           </Box>
@@ -182,7 +172,6 @@ const Production = () => {
     {
       id: 5,
       title: ["SDGsビンゴアプリケーション"],
-      yymd: "年月日",
       dialogContent: {
         title: ["SDGsビンゴアプリケーション"],
         content: (
@@ -190,17 +179,13 @@ const Production = () => {
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage4}
-              alt="プロジェクト3"
+              image={portfolioImage5}
+              alt="SDGsビンゴアプリケーション"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
+            SDGsの17の目標に関連する具体的なアクションをビンゴゲーム形式で提供する教育的Webアプリケーションです。ユーザーは日常生活で実践可能なタスクに取り組みながら、SDGsへの理解を深め、持続可能な社会への貢献を実感できます。
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -208,10 +193,10 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>Figma</li>
-                <li>React</li>
+                <li>フロントエンド：React</li>
+                <li>バックエンド：Firebase</li>
               </ul>
-            </Typography>            
+            </Typography>           
           </Box>
         )
       }
@@ -219,7 +204,6 @@ const Production = () => {
     {
       id: 6,
       title: ["iTL Magic Circle"],
-      yymd: "年月日",
       dialogContent: {
         title: ["iTL Magic Circle"],
         content: (
@@ -227,17 +211,13 @@ const Production = () => {
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage4}
-              alt="プロジェクト3"
+              image={portfolioImage6}
+              alt="iTL Magic Circle"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
+            iTL Magic Circleさんから依頼を受け、部員集め・サークル紹介・公演依頼募集・知名度向上を目的にサイトを作成しました。
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -245,10 +225,15 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>Figma</li>
-                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javaScript</li>
               </ul>
-            </Typography>           
+            </Typography>       
+            <Typography variant="h6" gutterBottom>制作物</Typography>
+            <Typography variant="body1">
+            <a href="https://itl-magic-circle.netlify.app/">https://itl-magic-circle.netlify.app/</a>
+            </Typography>     
           </Box>
         )
       }
@@ -303,9 +288,7 @@ const Production = () => {
                         </span>
                       ))}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {project.yymd}
-                    </Typography>
+                    
                   </CardContent>
                 </Card>
               </Grid>
