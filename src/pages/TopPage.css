@@ -384,7 +384,8 @@
   .aboutus-study,
   .aboutus-connect,
   .aboutus-express {
-    height: 440px; /* スマホでの縦幅 */
+    height: 320px !important;  /* スマホでの縦幅 */
+    width: 180px !important;
   }
 }
 
