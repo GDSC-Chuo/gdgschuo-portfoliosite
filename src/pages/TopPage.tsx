@@ -61,7 +61,8 @@ const TopPage = () => {
           <img src={gdgslogo} alt="TopPageImage" /> 
         </div>
         <div className='div-1-text'>
-          <h1>We are GDGs Chuo</h1>
+          <p className='div-1-text-h1'>We are</p>
+          <p className='div-1-text-h2'>GDGs Chuo</p>
         </div>
 
       </div>
