@@ -1,8 +1,9 @@
 import './Portfolio.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Card, CardContent, CardMedia, Typography, Container, Dialog, DialogTitle, DialogContent, DialogActions, Button, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Container, Dialog, DialogTitle, DialogContent, Box } from '@mui/material';
 import Grid from '@mui/material/Grid2';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { useState, ReactNode } from 'react';
 import portfolioImage1 from '../images/TopPage/portfolio-slider/image213.png';
 import portfolioImage2 from '../images/TopPage/portfolio-slider/image214.png';
@@ -19,7 +20,7 @@ interface Project {
   id: number;
   title: string[];
   yymd: string;
-  dialogContent: DialogContent;
+  dialogContent: DialogContent;  
 }
 
 const Portfolio = () => {
@@ -31,7 +32,7 @@ const Portfolio = () => {
       title: ["2024年度新歓BBQ"],
       yymd: "2024年5月12日",
       dialogContent: {
-        title: ["2024年度", "新歓BBQ"],
+        title: ["2024年度新歓BBQ"],
         content: (
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <CardMedia
@@ -191,7 +192,6 @@ const Portfolio = () => {
       <Header />
       <div className="portfolio">
         <h1>ポートフォリオ</h1>
-        <h2>mui material のダイアログのテスト</h2>
         <Container>
           <Grid container spacing={4}>
             {projects.map((project) => (
@@ -242,6 +242,8 @@ const Portfolio = () => {
           {selectedProjectData && (
             <>
               <DialogTitle sx={{ textAlign: 'center' }}>
+                <HighlightOffIcon onClick={handleClose} sx={{ position: 'absolute', right: 12, top: 12, cursor: 'pointer',fontSize: 36 }} />
+                
                 <Typography variant="h5" fontWeight="bold">
                   {selectedProjectData.dialogContent.title.map((line, index) => (
                     <span key={index}>
@@ -254,11 +256,6 @@ const Portfolio = () => {
               <DialogContent dividers>
                 {selectedProjectData.dialogContent.content}
               </DialogContent>
-              <DialogActions>
-                <Button onClick={handleClose} color="primary">
-                  閉じる
-                </Button>
-              </DialogActions>
             </>
           )}
         </Dialog>
