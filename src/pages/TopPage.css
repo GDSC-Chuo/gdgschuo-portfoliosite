@@ -321,6 +321,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0px;
 }
 
 .aboutus-create {
@@ -345,8 +346,9 @@
 .aboutus-connect h1,
 .aboutus-express h1 {
   color: white;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 24px;
+  padding: 0px;
+  margin-bottom: 4px;
   text-align: center; /* 中央揃えを追加 */
   width: 100%; /* 幅を100%に設定 */
 }
@@ -357,7 +359,7 @@
 .aboutus-express h2 {
   color: white;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4px;
   text-align: center; /* h2も中央揃えに */
   width: 100%; /* 幅を100%に設定 */
 }
@@ -393,7 +395,7 @@
 .aboutus-express img {
   height: 200px; /* PC版での高さ */
   width: auto;
-  margin-top: 1rem;
+  margin-top: 4px;
 }
 
 /* スマートフォン向けのスタイル */
@@ -415,7 +417,7 @@
   color: white;
   font-size: 1rem;
   line-height: 1.5;
-  margin-top: 1rem;
+  margin-top: 4px;
 }
 
 /* スマートフォン向けのスタイル */
