@@ -6,10 +6,10 @@ import Grid from '@mui/material/Grid2';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { useState, ReactNode } from 'react';
 import portfolioImage1 from '../images/Study/就活トーク会.png';
-import portfolioImage2 from '../images/Study/Webサイト勉強会.png';
-import portfolioImage3 from '../images/Study/GDSC Japan Networking.png';
-import portfolioImage4 from '../images/Study/アクセンチュア社員講演会.png';
-import portfolioImage5 from '../images/Study/2024年度新歓BBQ.png';
+import portfolioImage2 from '../images/Study/オープンキャンパス.png';
+import portfolioImage3 from '../images/Study/Webサイト勉強会.png';
+import portfolioImage4 from '../images/Study/外部企業社員講演会.png';
+import portfolioImage5 from '../images/Study/GDSC Japan Networking.png';
 import portfolioImage6 from '../images/Study/オープンキャンパス.png';
 
 
@@ -33,27 +33,25 @@ const Study = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: ["2024年度新歓BBQ"],
-      yymd: "2024年5月12日",
+      title: ["就活トーク会"],
+      yymd: "2024年7月2日、2024年12月15日",
       dialogContent: {
-        title: ["2024年度新歓BBQ"],
+        title: ["就活トーク会"],
         content: (
           <Box >
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage1}
-              alt="プロジェクト1"
+              alt="就活トーク会"
               sx={{ borderRadius: 1 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-              BBQで新入生歓迎会を行いました。
+            厳選したトークテーマにより、「就活におけるiTL生ならではの強みは？」「先輩たちはどんなアピールをしたのだろう？」iTL生の具体的な就活イメージが湧く話を聞けます。同じテーマで輩それぞれの体験談を比べることもできます。2025年度は入学式明けてすぐの4月に開かれる予定です。大学生活が不安な新1年生にもオススメのイベントです！
             </Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
-            </Typography>
+            <Typography variant="body1">2024年7月2日、2024年12月15日</Typography>
           </Box>
         )
       }
@@ -61,7 +59,7 @@ const Study = () => {
     {
       id: 2,
       title: ["オープンキャンパス"],
-      yymd: "2024年8月3日～4日",
+      yymd: "2024/08/03-04",
       dialogContent: {
         title: ["オープンキャンパス"],
         content: (
@@ -70,62 +68,67 @@ const Study = () => {
               component="img"
               height="300"
               image={portfolioImage2}
-              alt="プロジェクト2"
+              alt="オープンキャンパス"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">高校生に国際情報学部の"情報の仕組み"と"情報の法学"を学んでもらうイベント。実際に自動解析を行い、そこから分かる生成AIの危険性についての説明を行った。2日合わせて参加者は90人弱となった。</Typography>
+            <Typography variant="body1">高校生に国際情報学部の”情報の仕組み”と”情報の法学”を学んでもらうイベント。実際に画像解析を行い、そこからわかる生成AIの危険性についての説明が行われました。
+            2日合わせて参加者数は90人弱でした。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">2024年8月3日～4日</Typography>
-            <ul>
-              <li>機能1の説明</li>
-              <li>機能2の説明</li>
-              <li>機能3の説明</li>
-            </ul>
+            <Typography variant="body1">2024/08/03-04</Typography>            
           </Box>
         )
       }
     },
     {
       id: 3,
-      title: ["アクセンチュア社員講演会"],
-      yymd: "2023年10月14日",
+      title: ["Webサイト勉強会"],
+      yymd: "2024/4/24",
       dialogContent: {
-        title: ["アクセンチュア社員講演会"],
+        title: ["Webサイト勉強会"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage3}
-              alt="プロジェクト3"
+              alt="Webサイト勉強会"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">「生成AIが社会に与える影響とアクセンチュアに及ぼす変革」、「アクセンチュア・就活に関するお話」について対面とオンライン併用し講演を開催</Typography>
+            <Typography variant="body1">Webサイトについて3回に分けて勉強会を実施。第1回では環境構築、第2回ではHTML、第3回ではCSSについて学習しました。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">2023年10月14日</Typography>            
+            <Typography variant="body1">2024/4/24</Typography>
+            <Typography variant="h6" gutterBottom>使用ツール</Typography>
+            <Typography variant="body1" sx={{ maxWidth: '200px' }}>
+              <ul style={{ 
+                margin: 0,
+                paddingLeft: '20px',
+              }}>
+                <li>VScode</li>
+              </ul>
+            </Typography>
           </Box>
         )
       }
     },
     {
       id: 4,
-      title: ["Connect GDSC! - GDSC", "Japan Networking Party"],
+      title: ["外部企業社員講演会"],
       yymd: "2023年10月14日",
       dialogContent: {
-        title: ["Connect GDSC! - GDSC", "Japan Networking Party"],
+        title: ["外部企業社員講演会"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage4}
-              alt="プロジェクト3"
+              alt="外部企業社員講演会"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</Typography>
+            <Typography variant="body1">外部企業の社員様をお招きして、「生成AIが社会に与える影響」、「就活に関するお話」について対面とオンライン併用し講演が開催されました。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2023年10月14日</Typography>            
           </Box>
@@ -134,50 +137,28 @@ const Study = () => {
     },
     {
       id: 5,
-      title: ["プロジェクト名"],
-      yymd: "年月日",
+      title: ["Connect GDSC! - GDSC Japan Networking Party"],
+      yymd: "2023年4月1日",
       dialogContent: {
-        title: ["プロジェクト名"],
+        title: ["Connect GDSC! - GDSC Japan Networking Party"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage4}
-              alt="プロジェクト3"
+              image={portfolioImage5}
+              alt="Connect GDSC! - GDSC Japan Networking Party"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</Typography>
+            <Typography variant="body1">様々な大学から数人ずつ参加し、特別招待講演や懇親会を実施。チーム活動の強みを改めて認識する機会となりました。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">年月日</Typography>            
+            <Typography variant="body1">2023年4月1日</Typography>            
           </Box>
         )
       }
     },
-    {
-      id: 6,
-      title: ["プロジェクト名"],
-      yymd: "年月日",
-      dialogContent: {
-        title: ["プロジェクト名"],
-        content: (
-          <Box>
-            <CardMedia
-              component="img"
-              height="300"
-              image={portfolioImage4}
-              alt="プロジェクト3"
-              sx={{ borderRadius: 1, mt: 2 }}
-            />
-            <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">年月日</Typography>            
-          </Box>
-        )
-      }
-    },
+   
     
   ];
 
