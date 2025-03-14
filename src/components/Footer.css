@@ -70,7 +70,7 @@
   width: auto;
 }
 
-.follow-me {
+.follow-us {
   font-size: 16px;
   color: #333;
 }
@@ -86,7 +86,7 @@
     height: 12px; /* スマホでの画像サイズ */
   }
 
-  .follow-me {
-    font-size: 8px; /* スマホでの文字サイズ */
+  .follow-us {
+    font-size: 8px; /* スマホでの文字サイズを4pxに変更 */
   }
 }
