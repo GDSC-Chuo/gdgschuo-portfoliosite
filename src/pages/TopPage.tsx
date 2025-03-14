@@ -12,6 +12,7 @@ import Create from '../images/TopPage/aboutus_create.svg';
 import Study from '../images/TopPage/aboutus_study.svg';
 import Connect from '../images/TopPage/aboutus_connect.svg';
 import Express from '../images/TopPage/aboutus_express.svg';
+import ViewMore from '../images/TopPage/Frame 690.png'
 
 import Itlcircle from '../images/TopPage/production-slider/iTL-circle.png';
 import Itlfreeclassroom from '../images/TopPage/production-slider/iTLFreeClassroom.png';
@@ -26,6 +27,7 @@ import SDGsbingo from '../images/TopPage/production-slider/SDGsビンゴアプ�
 
 
 import Portfolio1 from '../images/TopPage/portfolio-slider/image214.png';
+import Portfolio2 from '../images/TopPage/portfolio-slider/就活トーク会.png';
 import Portfolio4 from '../images/TopPage/portfolio-slider/image(4).png';
 import Portfolio5 from '../images/TopPage/portfolio-slider/websitestudy.png';
 
@@ -74,7 +76,7 @@ const TopPage = () => {
           <img src={div2img} alt="TopPageImage" /> 
         </div>
         <div className='div-2-text'>
-          <h2>GDSC_Chuoは</h2>
+          <h2>GDGs_Chuoは</h2>
           <h2>Google Developer Student Clubsの中央大学支部として</h2>
           <h2>2022年に設立されました</h2>
           <h2>テクノロジーに興味のある人が集まり</h2>
@@ -121,6 +123,13 @@ const TopPage = () => {
           </Grid>
         </Box>
       </div>
+      <div className='view-more-section'>
+        <a href="/about">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
+
       <div className='production-section'>
         <h2>Portofolio(制作物)</h2>
         <div className='slider' ref={emblaRef1}>
@@ -140,12 +149,20 @@ const TopPage = () => {
           </div>
         </div>
       </div>
+
+      <div className='view-more-section'>
+        <a href="/production">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
       <div className='event-study-section'>
         <h2>Portofolio(イベント・勉強会)</h2>
         <div className='slider' ref={emblaRef2}>
           <div className='sliderList'>
             <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>オープンキャンパス</div>
-            <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>GDSC Japan Networking Party</div>
+            <div className='sliderItem'><img src = {Portfolio2} alt='Portfolio2'></img>就活トーク会</div>
+            <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio4'></img>GDSC Japan Networking Party</div>
             <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Webサイト勉強会</div>
           </div>
           <div className='sliderControls'>
@@ -154,6 +171,14 @@ const TopPage = () => {
           </div>
         </div>
       </div>
+
+      <div className='view-more-section'>
+        <a href="/study">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
+
       <div className='info-section'>
         <h2>Information</h2>
         <table className="info-table">
