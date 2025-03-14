@@ -76,7 +76,7 @@ const TopPage = () => {
           <img src={div2img} alt="TopPageImage" /> 
         </div>
         <div className='div-2-text'>
-          <h2>GDSC_Chuoは</h2>
+          <h2>GDGs_Chuoは</h2>
           <h2>Google Developer Student Clubsの中央大学支部として</h2>
           <h2>2022年に設立されました</h2>
           <h2>テクノロジーに興味のある人が集まり</h2>
