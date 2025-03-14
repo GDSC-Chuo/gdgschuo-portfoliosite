@@ -26,9 +26,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
   width: 100%;
   gap: 2rem;
+  margin-bottom: 5%;
 }
 
 .div-1-img {
@@ -66,6 +66,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
+  height: 537px;
   width: 100%;
   gap: 2rem;
 }
@@ -112,6 +113,7 @@
 
 /* スライドのコンテナ（他のスライドが見えないようにする） */
 .slider {
+  position: relative;
   overflow: hidden;
 }
 
@@ -137,6 +139,30 @@
   object-fit: cover;
 }
 
+/* スライダーコントロールのスタイル */
+.sliderControls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;  /* スライダー本体のクリックを妨げないように */
+}
+
+.sliderControls button {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  pointer-events: auto;  /* ボタンはクリック可能に */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -149,12 +175,6 @@
   }
   
 }
-
-
-
-
-
-
 
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 768px) {
@@ -202,6 +222,9 @@
     width: auto;
   }
 
+  .div-2 {
+    height: 100px !important;
+  }
   
 
   .div-2-text {
@@ -317,7 +340,7 @@
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
-  height: 500px; /* 縦幅を統一 */
+  height: 440px; /* 縦幅を統一 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -384,7 +407,8 @@
   .aboutus-study,
   .aboutus-connect,
   .aboutus-express {
-    height: 440px; /* スマホでの縦幅 */
+    height: 320px !important;  /* スマホでの縦幅 */
+    width: 180px !important;
   }
 }
 
