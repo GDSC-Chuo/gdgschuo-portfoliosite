@@ -16,13 +16,16 @@ import Express from '../images/TopPage/aboutus_express.svg';
 import Itlcircle from '../images/TopPage/production-slider/iTL-circle.png';
 import Itlfreeclassroom from '../images/TopPage/production-slider/iTLFreeClassroom.png';
 import Jearn from '../images/TopPage/production-slider/JEARN.png';
+import iTLStudentBoard from '../images/TopPage/production-slider/iTL Student Board.png';
+import CountBall from '../images/TopPage/production-slider/CountGame.png';
+import iTLMagicCircle from '../images/TopPage/production-slider/iTLMagicCircle.png';
+import Unitcalculationapp from '../images/TopPage/production-slider/単位計算アプリ.png';
+import SDGsbingo from '../images/TopPage/production-slider/SDGsビンゴアプリケーション.png';
 
 
 
 
 import Portfolio1 from '../images/TopPage/portfolio-slider/image214.png';
-import Portfolio2 from '../images/TopPage/portfolio-slider/image213.png';
-import Portfolio3 from '../images/TopPage/portfolio-slider/image(3).png';
 import Portfolio4 from '../images/TopPage/portfolio-slider/image(4).png';
 import Portfolio5 from '../images/TopPage/portfolio-slider/websitestudy.png';
 
@@ -120,15 +123,16 @@ const TopPage = () => {
       </div>
       <div className='production-section'>
         <h2>Portofolio(制作物)</h2>
-          <h2>Slider</h2>
             <div className='slider' ref={emblaRef1}>
               <div className='sliderList'>
                 <div className='sliderItem'><img src = {Itlcircle} alt='iTLサークル紹介'></img>iTLサークル紹介</div>
                 <div className='sliderItem'><img src = {Itlfreeclassroom} alt='iTL空き教室可視化アプリ'></img>iTL Free Classroom</div>
                 <div className='sliderItem'><img src = {Jearn} alt='Jearn'></img>JEARNサイト</div>
-                <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>Slide 4</div>
-                <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Slide 5</div>
-                <div className='sliderItem'>Slide 6</div>
+                <div className='sliderItem'><img src = {iTLStudentBoard} alt='iTLStudentBoard'></img>iTL Student Board</div>
+                <div className='sliderItem'><img src = {CountBall} alt='CountBall'></img>Count Game</div>
+                <div className='sliderItem'><img src = {iTLMagicCircle} alt = 'iTLMagicCircle'></img>iTL Magic Circle</div>
+                <div className='sliderItem'><img src = {Unitcalculationapp} alt='Unitcalculationapp'></img>中央大学専用単位計算アプリ</div>
+                <div className='sliderItem'><img src = {SDGsbingo} alt='SDGsbingo'></img>SDGsビンゴアプリケーション</div>
               </div>
             </div>
 
@@ -140,15 +144,11 @@ const TopPage = () => {
       </div>
       <div className='event-study-section'>
         <h2>Portofolio(イベント・勉強会)</h2>
-          <h2>Slider</h2>
             <div className='slider' ref={emblaRef2}>
               <div className='sliderList'>
                 <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>オープンキャンパス</div>
-                <div className='sliderItem'><img src = {Portfolio2} alt='Portfolio1'></img>2024年度 新歓BBQ</div>
-                <div className='sliderItem'><img src = {Portfolio3} alt='Portfolio1'></img>アクセンチュア社員講演会</div>
                 <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>GDSC Japan Networking Party</div>
                 <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Webサイト勉強会</div>
-                <div className='sliderItem'>Slide 6</div>
               </div>
             </div>
 
