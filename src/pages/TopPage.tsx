@@ -12,6 +12,7 @@ import Create from '../images/TopPage/aboutus_create.svg';
 import Study from '../images/TopPage/aboutus_study.svg';
 import Connect from '../images/TopPage/aboutus_connect.svg';
 import Express from '../images/TopPage/aboutus_express.svg';
+import ViewMore from '../images/TopPage/Frame 690.png'
 
 import Itlcircle from '../images/TopPage/production-slider/iTL-circle.png';
 import Itlfreeclassroom from '../images/TopPage/production-slider/iTLFreeClassroom.png';
@@ -122,6 +123,13 @@ const TopPage = () => {
           </Grid>
         </Box>
       </div>
+      <div className='view-more-section'>
+        <a href="/about">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
+
       <div className='production-section'>
         <h2>Portofolio(制作物)</h2>
         <div className='slider' ref={emblaRef1}>
@@ -141,6 +149,13 @@ const TopPage = () => {
           </div>
         </div>
       </div>
+
+      <div className='view-more-section'>
+        <a href="/production">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
       <div className='event-study-section'>
         <h2>Portofolio(イベント・勉強会)</h2>
         <div className='slider' ref={emblaRef2}>
@@ -156,6 +171,14 @@ const TopPage = () => {
           </div>
         </div>
       </div>
+
+      <div className='view-more-section'>
+        <a href="/study">
+          <img src={ViewMore} alt="ViewMore" />
+        </a>
+      </div>
+
+
       <div className='info-section'>
         <h2>Information</h2>
         <table className="info-table">

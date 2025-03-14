@@ -95,6 +95,37 @@
   margin-right: 15%;
 }
 
+.view-more-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 36px;
+}
+
+.view-more-section img {
+  height: 58px;
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .view-more-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px !important;
+    padding-top: 12px !important;
+    margin-top: 24px !important;
+  }
+  
+  .view-more-section img {
+    height: 24px !important;
+    width: auto;
+  }
+  
+}
+
 .production-section {
   width: min(1400px, 90%);
   margin-inline: auto;
