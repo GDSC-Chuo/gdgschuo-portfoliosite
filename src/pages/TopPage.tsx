@@ -81,7 +81,7 @@ const TopPage = () => {
       <div className='aboutus-section'>
         <h2>About Us</h2>
         <Box sx={{ paddingBottom: '8px' }}>
-          <Grid container spacing={1}>
+          <Grid container spacing={0.5}>
             <Grid size={{xs:6, md:3}}>
               <div className="aboutus-create">
                 <h1>Create</h1>

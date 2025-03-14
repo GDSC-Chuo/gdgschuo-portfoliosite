@@ -29,6 +29,7 @@
   background-color: antiquewhite;
   width: 100%;
   gap: 2rem;
+  margin-bottom: 5%;
 }
 
 .div-1-img {
@@ -66,6 +67,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
+  height: 537px;
   width: 100%;
   gap: 2rem;
 }
@@ -202,6 +204,9 @@
     width: auto;
   }
 
+  .div-2 {
+    height: 100px !important;
+  }
   
 
   .div-2-text {
@@ -317,7 +322,7 @@
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
-  height: 500px; /* 縦幅を統一 */
+  height: 440px; /* 縦幅を統一 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
