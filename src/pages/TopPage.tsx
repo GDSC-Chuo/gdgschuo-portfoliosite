@@ -123,40 +123,36 @@ const TopPage = () => {
       </div>
       <div className='production-section'>
         <h2>Portofolio(制作物)</h2>
-            <div className='slider' ref={emblaRef1}>
-              <div className='sliderList'>
-                <div className='sliderItem'><img src = {Itlcircle} alt='iTLサークル紹介'></img>iTLサークル紹介</div>
-                <div className='sliderItem'><img src = {Itlfreeclassroom} alt='iTL空き教室可視化アプリ'></img>iTL Free Classroom</div>
-                <div className='sliderItem'><img src = {Jearn} alt='Jearn'></img>JEARNサイト</div>
-                <div className='sliderItem'><img src = {iTLStudentBoard} alt='iTLStudentBoard'></img>iTL Student Board</div>
-                <div className='sliderItem'><img src = {CountBall} alt='CountBall'></img>Count Game</div>
-                <div className='sliderItem'><img src = {iTLMagicCircle} alt = 'iTLMagicCircle'></img>iTL Magic Circle</div>
-                <div className='sliderItem'><img src = {Unitcalculationapp} alt='Unitcalculationapp'></img>中央大学専用単位計算アプリ</div>
-                <div className='sliderItem'><img src = {SDGsbingo} alt='SDGsbingo'></img>SDGsビンゴアプリケーション</div>
-              </div>
-            </div>
-
-              <div className='sliderControls'>
-                <button type="button" onClick={handlePrev1}>Prev</button>
-                <button type="button" onClick={handleNext1}>Next</button>
-              </div>
-        
+        <div className='slider' ref={emblaRef1}>
+          <div className='sliderList'>
+            <div className='sliderItem'><img src = {Itlcircle} alt='iTLサークル紹介'></img>iTLサークル紹介</div>
+            <div className='sliderItem'><img src = {Itlfreeclassroom} alt='iTL空き教室可視化アプリ'></img>iTL Free Classroom</div>
+            <div className='sliderItem'><img src = {Jearn} alt='Jearn'></img>JEARNサイト</div>
+            <div className='sliderItem'><img src = {iTLStudentBoard} alt='iTLStudentBoard'></img>iTL Student Board</div>
+            <div className='sliderItem'><img src = {CountBall} alt='CountBall'></img>Count Game</div>
+            <div className='sliderItem'><img src = {iTLMagicCircle} alt = 'iTLMagicCircle'></img>iTL Magic Circle</div>
+            <div className='sliderItem'><img src = {Unitcalculationapp} alt='Unitcalculationapp'></img>中央大学専用単位計算アプリ</div>
+            <div className='sliderItem'><img src = {SDGsbingo} alt='SDGsbingo'></img>SDGsビンゴアプリケーション</div>
+          </div>
+          <div className='sliderControls'>
+            <button type="button" onClick={handlePrev1}>＜</button>
+            <button type="button" onClick={handleNext1}>＞</button>
+          </div>
+        </div>
       </div>
       <div className='event-study-section'>
         <h2>Portofolio(イベント・勉強会)</h2>
-            <div className='slider' ref={emblaRef2}>
-              <div className='sliderList'>
-                <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>オープンキャンパス</div>
-                <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>GDSC Japan Networking Party</div>
-                <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Webサイト勉強会</div>
-              </div>
-            </div>
-
-              <div className='sliderControls'>
-                <button type="button" onClick={handlePrev2}>Prev</button>
-                <button type="button" onClick={handleNext2}>Next</button>
-              </div>
-        
+        <div className='slider' ref={emblaRef2}>
+          <div className='sliderList'>
+            <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>オープンキャンパス</div>
+            <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio1'></img>GDSC Japan Networking Party</div>
+            <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Webサイト勉強会</div>
+          </div>
+          <div className='sliderControls'>
+            <button type="button" onClick={handlePrev2}>＜</button>
+            <button type="button" onClick={handleNext2}>＞</button>
+          </div>
+        </div>
       </div>
       <div className='info-section'>
         <h2>Information</h2>
@@ -191,12 +187,6 @@ const TopPage = () => {
         </table>
       </div>
       
-        
-      
-     
-        
-      
-      <h1>トップページです</h1>
     </div>
     <Footer />
   </>
