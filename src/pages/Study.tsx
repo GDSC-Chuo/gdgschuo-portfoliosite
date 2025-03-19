@@ -7,10 +7,10 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { useState, ReactNode } from 'react';
 import portfolioImage1 from '../images/Study/就活トーク会.png';
 import portfolioImage2 from '../images/Study/オープンキャンパス.png';
-import portfolioImage3 from '../images/Study/Webサイト勉強会.png';
-import portfolioImage4 from '../images/Study/外部企業社員講演会.png';
-import portfolioImage5 from '../images/Study/GDSC Japan Networking.png';
-import portfolioImage6 from '../images/Study/オープンキャンパス.png';
+import portfolioImage3 from '../images/Study/Pythobn勉強会.png';
+import portfolioImage4 from '../images/Study/Webサイト勉強会.png';
+import portfolioImage5 from '../images/Study/機械学習とニューラルネットワーク 1.png';
+import portfolioImage6 from '../images/Study/GDSC Japan Networking.png';
 
 
 // ダイアログの内容を定義するインターフェース
@@ -48,7 +48,7 @@ const Study = () => {
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            厳選したトークテーマにより、「就活におけるiTL生ならではの強みは？」「先輩たちはどんなアピールをしたのだろう？」iTL生の具体的な就活イメージが湧く話を聞けます。同じテーマで輩それぞれの体験談を比べることもできます。2025年度は入学式明けてすぐの4月に開かれる予定です。大学生活が不安な新1年生にもオススメのイベントです！
+            厳選したトークテーマを通じて、学部の先輩ならではの強みや先輩たちの就活におけるアピール方法について学べます。同じテーマで体験談を比べることもできます。1〜3年生にオススメのイベントです！
             </Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2024年7月2日、2024年12月15日</Typography>
@@ -72,7 +72,7 @@ const Study = () => {
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">高校生に国際情報学部の”情報の仕組み”と”情報の法学”を学んでもらうイベント。実際に画像解析を行い、そこからわかる生成AIの危険性についての説明が行われました。
+            <Typography variant="body1">高校生に国際情報学部の”情報の仕組み”と”情報の法学”を学んでもらうイベントで、2日合わせて90人弱が参加しました。実際に画像解析を行い、そこからわかる生成AIの危険性についての説明が行われました。学部に興味のある高校生も、オープンャンパスの手伝いに興味がある方もぜひ参加してみてください！
             2日合わせて参加者数は90人弱でした。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2024/08/03-04</Typography>            
@@ -82,6 +82,38 @@ const Study = () => {
     },
     {
       id: 3,
+      title: ["Python勉強会"],
+      yymd: "2024年前期",
+      dialogContent: {
+        title: ["Python勉強会"],
+        content: (
+          <Box>
+            <CardMedia
+              component="img"
+              height="300"
+              image={portfolioImage3}
+              alt="Python勉強会"
+              sx={{ borderRadius: 1, mt: 2 }}
+            />
+            <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
+            <Typography variant="body1">Pythonについて4回に分けてオンライン勉強会を実施しました。この会は実装環境から丁寧にpythonの最も基礎的なことを身に付けることを目的としています。第1回ではデータ型、第2回ではループ処理、第3回では配列、第4回では関数について学習しました。プログラミングに触れるきっかけになるような勉強会です！</Typography>
+            <Typography variant="h6" gutterBottom>実行時期</Typography>
+            <Typography variant="body1">2024年前期</Typography>
+            <Typography variant="h6" gutterBottom>使用ツール</Typography>
+            <Typography variant="body1" sx={{ maxWidth: '200px' }}>
+              <ul style={{ 
+                margin: 0,
+                paddingLeft: '20px',
+              }}>
+                <li>VScode</li>
+              </ul>
+            </Typography>
+          </Box>
+        )
+      }
+    },
+    {
+      id: 4,
       title: ["Webサイト勉強会"],
       yymd: "2024/4/24",
       dialogContent: {
@@ -91,12 +123,12 @@ const Study = () => {
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage3}
+              image={portfolioImage4}
               alt="Webサイト勉強会"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">Webサイトについて3回に分けて勉強会を実施。第1回では環境構築、第2回ではHTML、第3回ではCSSについて学習しました。</Typography>
+            <Typography variant="body1">Webサイトについて3回に分けて勉強会を実施しました。第1回では環境構築、第2回ではHTML、第3回ではCSSについて学習し、実際にWebサイトを作成しました！初心者にオススメな勉強会です！</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2024/4/24</Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
@@ -113,30 +145,30 @@ const Study = () => {
       }
     },
     {
-      id: 4,
-      title: ["外部企業社員講演会"],
-      yymd: "2023年10月14日",
+      id: 5,
+      title: ["勉強会「機械学習とニューラルネットワーク」"],
+      yymd: "2023年前期",
       dialogContent: {
-        title: ["外部企業社員講演会"],
+        title: ["勉強会「機械学習とニューラルネットワーク」"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage4}
-              alt="外部企業社員講演会"
+              image={portfolioImage5}
+              alt="勉強会「機械学習とニューラルネットワーク」"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">外部企業の社員様をお招きして、「生成AIが社会に与える影響」、「就活に関するお話」について対面とオンライン併用し講演が開催されました。</Typography>
+            <Typography variant="body1">「機械学習とニューラルネットワーク」に関する勉強会を実施しました。教師あり学習の仕組みをはじめ、機械学習の基礎知識を幅広く扱い、初心者にも理解しやすいように丁寧な説明と図解を用いたスライドを作成しました。このスライドを活用し、分かりやすい解説を交えながら勉強会を進めました。</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">2023年10月14日</Typography>            
+            <Typography variant="body1">2023年前期</Typography>            
           </Box>
         )
       }
     },
     {
-      id: 5,
+      id: 6,
       title: ["Connect GDSC! - GDSC Japan Networking Party"],
       yymd: "2023年4月1日",
       dialogContent: {
@@ -146,12 +178,12 @@ const Study = () => {
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage5}
+              image={portfolioImage6}
               alt="Connect GDSC! - GDSC Japan Networking Party"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">様々な大学から数人ずつ参加し、特別招待講演や懇親会を実施。チーム活動の強みを改めて認識する機会となりました。</Typography>
+            <Typography variant="body1">様々な大学から数人ずつ参加し、特別招待講演や懇親会を実施しました。チーム活動の強みを改めて認識する機会となりました！</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2023年4月1日</Typography>            
           </Box>
