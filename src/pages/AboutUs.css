@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    font-family: "Noto Sans JP";
 }
 
 .semititle {
@@ -110,7 +111,7 @@ h1{
     line-break: anywhere;
     font-size: 20px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
 .link {
