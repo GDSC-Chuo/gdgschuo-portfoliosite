@@ -151,7 +151,7 @@ const Production = () => {
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            「manabaやCplusが使いづらく、自身の単位確認ができない」「確認できても不安」そういった学生のためのアプリケーションです。
+            「manabaやCplusが使いづらく、自身の単位確認ができない」「確認できても不安」そういった学生のためのアプリケーション。
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
