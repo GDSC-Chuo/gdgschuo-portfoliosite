@@ -130,7 +130,7 @@ const TopPage = () => {
         </Box>
       </div>
       <div className='view-more-section'>
-        <a href="#"><Link to="/production">
+        <a href="#"><Link to="/about">
           <img src={ViewMore} alt="ViewMore" />
         </Link></a>
       </div>
