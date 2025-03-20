@@ -2,6 +2,8 @@ import './TopPage.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import useEmblaCarousel from 'embla-carousel-react'
+import { Link } from 'react-router-dom';
+
 import Box from '@mui/material/Box';
 import  Grid  from "@mui/material/Grid2";
 import gdgslogo from '../images/TopPage/gdgslogo.svg';
@@ -128,9 +130,9 @@ const TopPage = () => {
         </Box>
       </div>
       <div className='view-more-section'>
-        <a href="/about">
+        <a href="#"><Link to="/production">
           <img src={ViewMore} alt="ViewMore" />
-        </a>
+        </Link></a>
       </div>
 
 
@@ -155,9 +157,9 @@ const TopPage = () => {
       </div>
 
       <div className='view-more-section'>
-        <a href="/production">
+        <a href="#"><Link to="/production">
           <img src={ViewMore} alt="ViewMore" />
-        </a>
+        </Link></a>
       </div>
 
       <div className='event-study-section'>
@@ -179,9 +181,9 @@ const TopPage = () => {
       </div>
 
       <div className='view-more-section'>
-        <a href="/study">
+        <a href="#"><Link to="/study">
           <img src={ViewMore} alt="ViewMore" />
-        </a>
+        </Link></a>
       </div>
 
 
