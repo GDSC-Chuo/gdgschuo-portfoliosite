@@ -5,12 +5,12 @@ import { Card, CardContent, CardMedia, Typography, Container, Dialog, DialogTitl
 import Grid from '@mui/material/Grid2';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { useState, ReactNode } from 'react';
-import portfolioImage1 from '../images/Production/iTLサークル紹介.png';
-import portfolioImage2 from '../images/Production/iTL Free  Classroom.png';
-import portfolioImage3 from '../images/Production/JEARN.png';
-import portfolioImage4 from '../images/Production/単位計算アプリ.png';
-import portfolioImage5 from '../images/Production/SDGsビンゴアプリケーション.png';
-import portfolioImage6 from '../images/Production/iTLMagicCircle.png';
+import portfolioImage1 from '../images/Production/iTLMagicCircle.png';
+import portfolioImage2 from '../images/Production/SDGsビンゴアプリケーション.png';
+import portfolioImage3 from '../images/Production/単位計算アプリ.png';
+import portfolioImage4 from '../images/Production/JEARN.png';
+import portfolioImage5 from '../images/Production/iTLFreeClassroom.png';
+import portfolioImage6 from '../images/Production/iTLサークル紹介.png';
 
 
 // ダイアログの内容を定義するインターフェース
@@ -31,21 +31,21 @@ const Production = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: ["iTLサークル紹介"],
+      title: ["iTL Magic Circle"],
       dialogContent: {
-        title: ["iTLサークル紹介"],
+        title: ["iTL Magic Circle"],
         content: (
-          <Box >
+          <Box>
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage1}
-              alt="iTLサークル紹介サイト"
-              sx={{ borderRadius: 1 }}
+              alt="iTL Magic Circle"
+              sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            学部独自のサークルが多いiTL。「iTLにはどんなサークルがある？」「公認なのか非公認なのかも分からない...。」新入生によくあるこれらの悩みを、解決するためのサイトを作成しました。GDGsと国際連盟がタッグを組み、iTLのサークルを一覧にまとめてあります。iTLならではの魅力的なサークルがたくさんあるので、新入生はぜひご覧ください！
+            iTL Magic Circleさんから依頼を受け、部員集め・サークル紹介・公演依頼募集・知名度向上を目的にサイトを作成しました。
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -53,50 +53,87 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>Figma</li>
-                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javaScript</li>
               </ul>
-            </Typography>
-            
+            </Typography>       
+            <Typography variant="h6" gutterBottom>制作物</Typography>
+            <Typography variant="body1">
+            <a href="https://itl-magic-circle.netlify.app/">https://itl-magic-circle.netlify.app/</a>
+            </Typography>     
           </Box>
         )
       }
     },
     {
       id: 2,
-      title: ["iTL Free Classroom"],
-     
+      title: ["SDGsビンゴアプリケーション"],
       dialogContent: {
-        title: ["iTL Free Classroom"],
+        title: ["SDGsビンゴアプリケーション"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage2}
-              alt="iTL Free Classroom"
+              alt="SDGsビンゴアプリケーション"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            このアプリケーションは、Vue.jsとFirebaseを使用して開発した大学内の空き教室可視化ツールです。学生や教職員が、空いている教室や授業が行われている教室を簡単に確認できるように設計されています。
-            </Typography>            
+            SDGsの17の目標に関連する具体的なアクションをビンゴゲーム形式で提供する教育的Webアプリケーションです。ユーザーは日常生活で実践可能なタスクに取り組みながら、SDGsへの理解を深め、持続可能な社会への貢献を実感できます。
+            </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
               <ul style={{ 
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>フロントエンド：Vue.js</li>
+                <li>フロントエンド：React</li>
                 <li>バックエンド：Firebase</li>
               </ul>
-            </Typography>
+            </Typography>           
           </Box>
         )
       }
     },
     {
       id: 3,
+      title: ["中央大学専用単位計算アプリ"],
+      dialogContent: {
+        title: ["中央大学専用単位計算アプリ"],
+        content: (
+          <Box>
+            <CardMedia
+              component="img"
+              height="300"
+              image={portfolioImage3}
+              alt="中央大学専用単位計算アプリ"
+              sx={{ borderRadius: 1, mt: 2 }}
+            />
+            <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
+            <Typography variant="body1">
+            「manabaやCplusが使いづらく、自身の単位確認ができない」「確認できても不安」そういった学生のためのアプリケーションです。
+            </Typography>
+            <Typography variant="h6" gutterBottom>使用ツール</Typography>
+            <Typography variant="body1" sx={{ maxWidth: '200px' }}>
+              <ul style={{ 
+                margin: 0,
+                paddingLeft: '20px',
+              }}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ul>
+            </Typography>           
+          </Box>
+        )
+      }
+    },
+    {
+      id: 4,
       title: ["JEARNサイト"],
       dialogContent: {
         title: ["JEARNサイト"],
@@ -105,7 +142,7 @@ const Production = () => {
             <CardMedia
               component="img"
               height="300"
-              image={portfolioImage3}
+              image={portfolioImage4}
               alt="JEARNサイト"
               sx={{ borderRadius: 1, mt: 2 }}
             />
@@ -136,88 +173,55 @@ const Production = () => {
       }
     },
     {
-      id: 4,
-      title: ["中央大学専用単位計算アプリ"],
-      dialogContent: {
-        title: ["中央大学専用単位計算アプリ"],
-        content: (
-          <Box>
-            <CardMedia
-              component="img"
-              height="300"
-              image={portfolioImage4}
-              alt="中央大学専用単位計算アプリ"
-              sx={{ borderRadius: 1, mt: 2 }}
-            />
-            <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">
-            「manabaやCplusが使いづらく、自身の単位確認ができない」「確認できても不安」そういった学生のためのアプリケーションです。
-            </Typography>
-            <Typography variant="h6" gutterBottom>使用ツール</Typography>
-            <Typography variant="body1" sx={{ maxWidth: '200px' }}>
-              <ul style={{ 
-                margin: 0,
-                paddingLeft: '20px',
-              }}>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>Django</li>
-              </ul>
-            </Typography>           
-          </Box>
-        )
-      }
-    },
-    {
       id: 5,
-      title: ["SDGsビンゴアプリケーション"],
+      title: ["iTL Free Classroom"],
+     
       dialogContent: {
-        title: ["SDGsビンゴアプリケーション"],
+        title: ["iTL Free Classroom"],
         content: (
           <Box>
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage5}
-              alt="SDGsビンゴアプリケーション"
+              alt="iTL Free Classroom"
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            SDGsの17の目標に関連する具体的なアクションをビンゴゲーム形式で提供する教育的Webアプリケーションです。ユーザーは日常生活で実践可能なタスクに取り組みながら、SDGsへの理解を深め、持続可能な社会への貢献を実感できます。
-            </Typography>
+            このアプリケーションは、Vue.jsとFirebaseを使用して開発した大学内の空き教室可視化ツールです。学生や教職員が、空いている教室や授業が行われている教室を簡単に確認できるように設計されています。
+            </Typography>            
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
               <ul style={{ 
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>フロントエンド：React</li>
+                <li>フロントエンド：Vue.js</li>
                 <li>バックエンド：Firebase</li>
               </ul>
-            </Typography>           
+            </Typography>
           </Box>
         )
       }
     },
     {
       id: 6,
-      title: ["iTL Magic Circle"],
+      title: ["iTLサークル紹介"],
       dialogContent: {
-        title: ["iTL Magic Circle"],
+        title: ["iTLサークル紹介"],
         content: (
-          <Box>
+          <Box >
             <CardMedia
               component="img"
               height="300"
               image={portfolioImage6}
-              alt="iTL Magic Circle"
-              sx={{ borderRadius: 1, mt: 2 }}
+              alt="iTLサークル紹介サイト"
+              sx={{ borderRadius: 1 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
             <Typography variant="body1">
-            iTL Magic Circleさんから依頼を受け、部員集め・サークル紹介・公演依頼募集・知名度向上を目的にサイトを作成しました。
+            学部独自のサークルが多いiTL。「iTLにはどんなサークルがある？」「公認なのか非公認なのかも分からない...。」新入生によくあるこれらの悩みを、解決するためのサイトを作成しました。GDGsと国際連盟がタッグを組み、iTLのサークルを一覧にまとめてあります。iTLならではの魅力的なサークルがたくさんあるので、新入生はぜひご覧ください！
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>
@@ -225,19 +229,20 @@ const Production = () => {
                 margin: 0,
                 paddingLeft: '20px',
               }}>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>javaScript</li>
+                <li>Figma</li>
+                <li>React</li>
               </ul>
-            </Typography>       
-            <Typography variant="h6" gutterBottom>制作物</Typography>
-            <Typography variant="body1">
-            <a href="https://itl-magic-circle.netlify.app/">https://itl-magic-circle.netlify.app/</a>
-            </Typography>     
+            </Typography>
+            
           </Box>
         )
       }
     },
+    
+    
+    
+    
+    
     
   ];
 
@@ -259,7 +264,7 @@ const Production = () => {
       </div>
       <Container>
           <Grid container spacing={4}>
-            {projects.map((project) => (
+          {[...projects].reverse().map((project) => (
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={project.id} component="div">
                 <Card 
                   sx={{ height: '100%', cursor: 'pointer' }} 
