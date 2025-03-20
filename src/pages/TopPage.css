@@ -289,6 +289,7 @@
   width: 100%;
   padding: 2rem;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .info-section h2 {
@@ -331,20 +332,45 @@
 
 /* スマートフォン向けのスタイル */
 @media screen and (max-width: 768px) {
+  .info-section {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .info-section h2 {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .info-table {
+    width: 90%;
+    margin: 0 auto;
+    table-layout: fixed;
   }
 
   .info-table th,
   .info-table td {
     padding: 0.5rem;
     font-size: 8px;
+    text-align: center;
+    word-break: break-word;
   }
 
   .info-table td img {
-    height: 12px; /* スマホでは小さく */
-    margin: 0 4px; /* スマホでは余白も小さく */
+    height: 12px;
+    margin: 0 4px;
+  }
+
+  /* テーブルのレスポンシブ対応 */
+  .info-table {
+    width: 90%;
+    max-width: 100%;
   }
 }
 
