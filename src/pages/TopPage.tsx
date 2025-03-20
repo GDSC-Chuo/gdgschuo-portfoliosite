@@ -30,6 +30,10 @@ import Portfolio1 from '../images/TopPage/portfolio-slider/image214.png';
 import Portfolio2 from '../images/TopPage/portfolio-slider/就活トーク会.png';
 import Portfolio4 from '../images/TopPage/portfolio-slider/image(4).png';
 import Portfolio5 from '../images/TopPage/portfolio-slider/websitestudy.png';
+import Portfolio6 from '../images/TopPage/portfolio-slider/機械学習とニューラルネットワーク 1.png';
+import Portfolio7 from '../images/TopPage/portfolio-slider/Pythobn勉強会.png';
+
+
 
 
 
@@ -160,10 +164,12 @@ const TopPage = () => {
         <h2>Portofolio(イベント・勉強会)</h2>
         <div className='slider' ref={emblaRef2}>
           <div className='sliderList'>
-            <div className='sliderItem'><img src = {Portfolio1} alt='Portfolio1'></img>オープンキャンパス</div>
-            <div className='sliderItem'><img src = {Portfolio2} alt='Portfolio2'></img>就活トーク会</div>
-            <div className='sliderItem'><img src = {Portfolio4} alt='Portfolio4'></img>GDSC Japan Networking Party</div>
-            <div className='sliderItem'><img src = {Portfolio5} alt='Portfolio1'></img>Webサイト勉強会</div>
+            <div className='sliderItem'><img src = {Portfolio1} alt='オープンキャンパス'></img>オープンキャンパス</div>
+            <div className='sliderItem'><img src = {Portfolio2} alt='就活トーク会'></img>就活トーク会</div>
+            <div className='sliderItem'><img src = {Portfolio4} alt='GDSC Japan Networking Party'></img>GDSC Japan Networking Party</div>
+            <div className='sliderItem'><img src = {Portfolio5} alt='Webサイト勉強会'></img>Webサイト勉強会</div>
+            <div className='sliderItem'><img src = {Portfolio6} alt='機械学習とニューラルネットワーク'></img>機械学習とニューラルネットワーク</div>
+            <div className='sliderItem'><img src = {Portfolio7} alt='Python勉強会'></img>Python勉強会</div>
           </div>
           <div className='sliderControls'>
             <button type="button" onClick={handlePrev2}>＜</button>
