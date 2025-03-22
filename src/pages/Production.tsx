@@ -150,11 +150,6 @@ const Production = () => {
             <Typography variant="body1">
             非営利団体JEARNのHP改修プロジェクトです。
             このプロジェクトのゴールはHPを完成させて、誰でもドキュメントを見れば改修・更新ができる状態にすることです。
-
-            </Typography>
-            <Typography variant="h6" gutterBottom>実行時期</Typography>
-            <Typography variant="body1">
-              2024年5月12日
             </Typography>
             <Typography variant="h6" gutterBottom>使用ツール</Typography>
             <Typography variant="body1" sx={{ maxWidth: '200px' }}>

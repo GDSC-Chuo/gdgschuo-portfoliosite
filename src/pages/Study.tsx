@@ -157,8 +157,7 @@ const Study = () => {
               sx={{ borderRadius: 1, mt: 2 }}
             />
             <Typography variant="h6" gutterBottom>プロジェクト説明</Typography>
-            <Typography variant="body1">高校生に国際情報学部の”情報の仕組み”と”情報の法学”を学んでもらうイベントで、2日合わせて90人弱が参加しました。実際に画像解析を行い、そこからわかる生成AIの危険性についての説明が行われました。学部に興味のある高校生も、オープンャンパスの手伝いに興味がある方もぜひ参加してみてください！
-            2日合わせて参加者数は90人弱でした。</Typography>
+            <Typography variant="body1">高校生に国際情報学部の”情報の仕組み”と”情報の法学”を学んでもらうイベントで、2日合わせて90人弱が参加しました。実際に画像解析を行い、そこからわかる生成AIの危険性についての説明が行われました。学部に興味のある高校生も、オープンャンパスの手伝いに興味がある方もぜひ参加してみてください！</Typography>
             <Typography variant="h6" gutterBottom>実行時期</Typography>
             <Typography variant="body1">2024/08/03-04</Typography>            
           </Box>
